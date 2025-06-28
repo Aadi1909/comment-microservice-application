@@ -29,8 +29,8 @@ public class Comments {
 
     private String repliedCommentId;
 
-    private Integer upvoteCount;
-    private Integer downvoteCount;
+    private Integer upvoteCount = 0;
+    private Integer downvoteCount = 0;
 
     private Instant timestamp;
 

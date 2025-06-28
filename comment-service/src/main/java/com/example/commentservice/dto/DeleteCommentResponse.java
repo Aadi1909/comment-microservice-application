@@ -4,13 +4,12 @@ package com.example.commentservice.dto;
 import lombok.*;
 
 @Getter @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class RepliedComment {
+public class DeleteCommentResponse {
 
     private String status;
     private String message;
-    private RepliedCommentDto comment;
-
 }
+

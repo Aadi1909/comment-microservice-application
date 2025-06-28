@@ -7,10 +7,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RepliedComment {
+public class UpvoteResponse {
 
     private String status;
     private String message;
-    private RepliedCommentDto comment;
-
 }

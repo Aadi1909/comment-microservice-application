@@ -19,4 +19,10 @@ public interface CommentRepository extends MongoRepository<Comments, String> {
     List<Comments> findByTopicIdAndTimestampLessThanOrderByTimestampDesc(String topicId, Instant cursor, Pageable pageable);
 
     long countByTopicId(String topicId);
+
+    void deleteByCommentIdIn(List<String> commentIds);
+
+    List<Comments> findByRepliedCommentId(String parentId);
+
 }
+

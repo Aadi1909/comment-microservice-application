@@ -17,5 +17,5 @@ public class Topics {
 
     private String topicId;
 
-    private String totalCount; // The total count of comments of the topic.
+    private Integer totalCount; // The total count of comments of the topic.
 }
